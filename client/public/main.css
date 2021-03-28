@@ -1,0 +1,7 @@
+.header {
+    background-image: url('/logo192.png');
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
