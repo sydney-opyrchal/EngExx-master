@@ -25,29 +25,16 @@ function CDC() {
                 
             </header>
             
-            <h1>Da CDC Page</h1>
+            <h1>CDC Guidelines</h1>
 
             <p> </p>
             <p> </p>
         <div class="description">
-            <h2>Health Tippies</h2>
-            <p> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis. Suspendisse consectetur mi id libero fringilla, in pharetra sem ullamcorper.
-            </p>
-            <p>    
-                - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis. Suspendisse consectetur mi id libero fringilla, in pharetra sem ullamcorper.
-                </p>
-                <p>
-                -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis. Suspendisse consectetur mi id libero fringilla, in pharetra sem ullamcorper.
-
+            <h2>CDC Twitter</h2>
+            <p> 
+                <a href="https://twitter.com/CDCgov">Please click here to stay up to date!</a>
             </p>
         </div>
-
-        
-
-
-       
-        
-            <h2>Questions</h2>
             
         
         
