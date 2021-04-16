@@ -3,11 +3,12 @@ import React from 'react';
 import { Route, Switch, Redirect  } from 'react-router-dom';
 import Home from "./views/Home/Home"
 import Teams from "./views/Teams/Teams"
-//import Calendar from "./views/Calendar/Calendar"
+import TheCalendar from "./views/TheCalendar/TheCalendar"
+//import TheCalendar from "./views/imtrying/imtrying";
 import FitnessTips from "./views/FitnessTips/FitnessTips"
-//import HealthTips from "./views/HealthTips/HealthTips"
-import NotFound from "./views/NotFound"
+import HealthTips from "./views/HealthTips/HealthTips"
 import CDC from "./views/CDC/CDC"
+import NotFound from "./views/NotFound"
 import Header from "./components/Header/Header"
 
 
@@ -21,10 +22,11 @@ const App = () => {
           <Redirect to="/Home" />
         </Route>
         <Route exact path="/Teams" component={Teams} />
-        <Route exact path="/Calendr" component={Teams} />
+        <Route exact path="/Calendar" component={TheCalendar} /> 
         <Route exact path="/FitnessTips" component={FitnessTips} />
-        <Route exact path="/HealthTips" component={FitnessTips} />
+        <Route exact path="/HealthTips" component={HealthTips} />
         <Route exact path="/CDCTips" component={CDC} />
+        
         <Route component={NotFound}/>
       </Switch>
     </div>
