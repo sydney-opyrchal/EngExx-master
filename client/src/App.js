@@ -4,7 +4,7 @@ import { Route, Switch, Redirect  } from 'react-router-dom';
 import Home from "./views/Home/Home"
 import Teams from "./views/Teams/Teams"
 import TheCalendar from "./views/TheCalendar/TheCalendar"
-//import TheCalendar from "./views/imtrying/imtrying";
+
 import FitnessTips from "./views/FitnessTips/FitnessTips"
 import HealthTips from "./views/HealthTips/HealthTips"
 import CDC from "./views/CDC/CDC"
