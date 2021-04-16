@@ -10,6 +10,7 @@ import HealthTips from "./views/HealthTips/HealthTips"
 import CDC from "./views/CDC/CDC"
 import NotFound from "./views/NotFound"
 import Header from "./components/Header/Header"
+import Login from "./views/Login/login"
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
         <Route exact path="/Calendar" component={TheCalendar} /> 
         <Route exact path="/FitnessTips" component={FitnessTips} />
         <Route exact path="/HealthTips" component={HealthTips} />
+        <Route exact path="/Login" component={Login} />
         <Route exact path="/CDCTips" component={CDC} />
         
         <Route component={NotFound}/>
