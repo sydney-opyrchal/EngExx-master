@@ -1,6 +1,6 @@
 .App {
     text-align: left;
-    /*background-image: url('/lightgray.jpeg');*/
+    
     background-color: antiquewhite;
     
     background-size:cover;
@@ -39,7 +39,7 @@ html, body{
 
 .App-header {
     background-color: #941515;
-    /*background-image: url('/logo192.png');*/
+    
     min-height: 10vh;
     display: flex;
     flex-direction: column;
