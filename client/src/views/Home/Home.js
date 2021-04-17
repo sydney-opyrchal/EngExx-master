@@ -1,5 +1,5 @@
 import React from 'react';
-import { Calendar } from './Calendar';
+import {TheCalendar } from './Calendarr';
 
 /*import logo from '../../assets/logo.svg';*/
 import logo from '../../assets/HT.png';
@@ -34,7 +34,7 @@ function Home() {
                 
                 <h2>Calendar</h2>
                 </div>
-            <Calendar/>
+            <TheCalendar/>
             <button class="btn btn-outline-secondary btn-lg">Add Event</button>
             <p>
 
