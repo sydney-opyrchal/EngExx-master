@@ -11,25 +11,87 @@ function FitnessTips() {
         
         
         <div className="App">
-              
-              
-
             <header className="App-header"> 
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                </a>
-                
+                <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer"></a>
             </header>
             
-            <h1>Da Fitness Page</h1>
+            <div class="container">
+             <div class="row my-row-spacer-30"></div>
+                <div class="row justify-content-center fit-row">
+                    <h1>Da Fitness Page</h1>
+                </div>
+                <div class="row fit-row">
+                    <div class="col d-flex justify-content-center fit-col">
+                        <div>Here you can find what we consider to be the most important tips for staying strong and healthy!</div>
+                    </div>
+                </div>
+                <div class="row my-row-spacer-65"></div>
+                <div class="row fit-row">
+                    <div class="col-md-4 fit-col">
+                        <div class="row justify-content-center fit-row">
+                            <h3>Tip1</h3>
+                            <div class="row justify-content-center fit-row">
+                                <div class="col fit-col">
+                                    <div>
+                                        Don't forget to drink water! Dehydration can cause your body to stop functioning at its fullest, making you lose strength and miss out on your gains!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 fit-col">
+                        <div class="row justify-content-center fit-row">
+                            <h3>Tip2</h3>
+                            <div class="row justify-content-center fit-row">
+                                <div class="col fit-col">
+                                    <div>
+                                        Sleep is very important! When you're asleep is when your body heals your torn muscle fibers the most. If you don't sleep your body won't heal as well and you'll be killing your gains!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col-md-4 fit-col">
+                        <div class="row justify-content-center fit-row">
+                            <h3>Tip3</h3>
+                            <div class="row justify-content-center fit-row">
+                                <div class="col fit-col">
+                                    <div>
+                                        Please literally just stay hydrated and sleep ty (also eat protein)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-row-spacer-100"></div>
+                <div class="container-fluid w-100">
+                    <div class="row fit-row">
+                        <div class="col d-flex justify-content-left fit-col">
+                            <h2>Resources</h2>
+                        </div>
+                    </div>
+                    <div class="row fit-row">
+                        <div class="col d-flex justify-content-left fit-col">
+                            <ul>
+                                <li>Link to something (nutrition ideas?)</li>
+                                <li>Idk, link to something else lol</li>
+                                <li>some other third thing</li>
+                                <div>maybe we could fuse the health tips below this? Idk what we're doing with them</div>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>     
+        </div>
+    );
+}
 
-            <p> </p>
-            <p> </p>
-        <div class="description">
+export default FitnessTips;
+
+
+/* <div class="description">
             <h2>Fitness Tippies</h2>
             <p> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis. Suspendisse consectetur mi id libero fringilla, in pharetra sem ullamcorper.
             </p>
@@ -41,35 +103,4 @@ function FitnessTips() {
 
             </p>
         </div>
-
-        
-
-
-       
-        
-            <h2>Questions</h2>
-            
-        
-        
-    <div class="form-group">
-        <input type="text" class="form-control" placeholder="Name" name=""/>
-    </div>
-    <div class="form-group">
-        <input type="email" class="form-control" placeholder="Email Address" name="email"/>
-    </div>
-    <div class="form-group">
-        <textarea class="form-control" rows="4"></textarea>
-    </div>
-    <input type="submit" class="btn btn-secondary btn-block" value="Send" name=""></input>
-    </div> 
-    
-    
-       
-       
-        
-
-        
-    );
-}
-
-export default FitnessTips;
+        */

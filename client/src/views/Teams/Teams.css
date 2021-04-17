@@ -76,3 +76,29 @@ html, body{
     color:#000;
     
 }
+
+/*.my-row {
+    border: 2px solid red;
+}*/
+.my-row-spacer-100 {
+    min-height: 100px;
+}
+.my-row-spacer-65 {
+    min-height: 65px;
+}
+.my-row-spacer-30 {
+    min-height: 30px;
+}
+
+/*.my-col {
+     border: 2px dotted blue;
+}*/
+
+.description {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+img {
+    width: 100%;
+    height: auto;
+}

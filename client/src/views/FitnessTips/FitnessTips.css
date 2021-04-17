@@ -76,3 +76,13 @@ html, body{
     color:#000;
     
 }
+
+.my-row-spacer-100 {
+    min-height: 100px;
+}
+.my-row-spacer-65 {
+    min-height: 65px;
+}
+.my-row-spacer-30 {
+    min-height: 30px;
+}

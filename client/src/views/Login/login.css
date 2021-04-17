@@ -76,3 +76,18 @@ html, body{
     color:#000;
     
 }
+.login-row {
+    /*border: 5px solid red;*/
+    height: 950px;
+}
+.my-row-spacer-100 {
+    min-height: 100px;
+}
+.login-col {
+     /*border: 7px dotted blue;*/
+     height: max-content;
+}
+/*.login-container {
+    border: 5px solid green;
+}*/
+
