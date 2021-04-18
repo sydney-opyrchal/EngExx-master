@@ -1,9 +1,6 @@
 .App {
-    text-align: left;
-    background-image: url('/lightgray.jpeg');
-    
+    text-align: left;    
     background-size:cover;
-    
     background-position: center;
     position: relative;
     width:100%;

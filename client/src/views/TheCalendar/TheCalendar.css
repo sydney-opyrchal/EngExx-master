@@ -1,6 +1,5 @@
 .App {
     text-align: left;
-    background-color: antiquewhite;
     background-size:cover;
     background-position: center;
     position: relative;
@@ -53,7 +52,6 @@ html, body{
     align-items: left;
     justify-content: left;
     font-size: calc(10px + 2vmin);
-    color: rgb(255, 255, 255);
 }
 
 .App-link {

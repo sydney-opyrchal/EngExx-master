@@ -1,69 +1,50 @@
-import React, { Component } from 'react';
-import {
-  CalendarWrapper,
-  CalendarContainer,
-  PagingButton,
-  Day,
-  DayHeader
-} from './CalendarComponents'
-import moment from 'moment';
+import { createLocal } from '../create/local';
+import { cloneWithOffset } from '../units/offset';
+import isFunction from '../utils/is-function';
+import { hooks } from '../utils/hooks';
+import { isMomentInput } from '../utils/is-moment-input';
+import isCalendarSpec from '../utils/is-calendar-spec';
 
-export class Calendar extends Component {
+export function getCalendarFormat(myMoment, now) {
+    var diff = myMoment.diff(now, 'days', true);
+    return diff < -6
+        ? 'sameElse'
+        : diff < -1
+        ? 'lastWeek'
+        : diff < 0
+        ? 'lastDay'
+        : diff < 1
+        ? 'sameDay'
+        : diff < 2
+        ? 'nextDay'
+        : diff < 7
+        ? 'nextWeek'
+        : 'sameElse';
+}
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      date: moment(),
+export function calendar(time, formats) {
+    // Support for single parameter, formats only overload to the calendar function
+    if (arguments.length === 1) {
+        if (isMomentInput(arguments[0])) {
+            time = arguments[0];
+            formats = undefined;
+        } else if (isCalendarSpec(arguments[0])) {
+            formats = arguments[0];
+            time = undefined;
+        }
     }
-  }
-  createDaysOfMonth(refDate) {
-    const date = moment(refDate).endOf('month');
-    const lastDate = date.date();
-    const firstWeekday = date.startOf('month').day();
-  
-    const calendarDays = [];
-  
-    const today = moment();
-  
-    for (let w=0; w<firstWeekday; w++) {
-      calendarDays.push(<Day key={Math.random()}/>); // empty days
-    }
-  
-    for (let d=1; d<lastDate; d++) {
-      calendarDays.push(<Day key={d} today={date.date(d).isSame(today, 'day')}>{d}</Day>);
-    }
-  
-    while (calendarDays.length % 7 !== 0) {
-      calendarDays.push(<Day key={Math.random()}/>);
-    }
-  
-    return calendarDays;
-  }
+    // We want to compare the start of today, vs this.
+    // Getting start-of-today depends on whether we're local/utc/offset or not.
+    var now = time || createLocal(),
+        sod = cloneWithOffset(now, this).startOf('day'),
+        format = hooks.calendarFormat(this, sod) || 'sameElse',
+        output =
+            formats &&
+            (isFunction(formats[format])
+                ? formats[format].call(this, now)
+                : formats[format]);
 
-  prevMonth() {
-    this.setState({date: this.state.date.subtract(1, 'month')})
-  }
-  
-  nextMonth() {
-    this.setState({date: this.state.date.add(1, 'month')})
-  }
-  render() {
-    return <CalendarWrapper>
-    <h2>{this.state.date.format('MMMM YYYY')}</h2>
-    <div>
-      <PagingButton onClick={this.prevMonth.bind(this)}>&lt;</PagingButton>
-      <PagingButton onClick={this.nextMonth.bind(this)}>&gt;</PagingButton>
-    </div>
-    <CalendarContainer>
-      <DayHeader>Sunday</DayHeader>
-      <DayHeader>Monday</DayHeader>
-      <DayHeader>Tuesday</DayHeader>
-      <DayHeader>Wednesday</DayHeader>
-      <DayHeader>Thursday</DayHeader>
-      <DayHeader>Friday</DayHeader>
-      <DayHeader>Saturday</DayHeader>
-      {this.createDaysOfMonth(this.state.date)}
-    </CalendarContainer>
-  </CalendarWrapper>;
-  }
+    return this.format(
+        output || this.localeData().calendar(format, this, createLocal(now))
+    );
 }
