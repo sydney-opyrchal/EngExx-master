@@ -1,6 +1,5 @@
 .App {
     text-align: left;
-    background-color: antiquewhite;
     background-size:cover;
     background-position: center;
     position: relative;
@@ -39,17 +38,14 @@ html, body{
     align-items: left;
     justify-content: left;
     font-size: calc(10px + 2vmin);
-    color: rgb(252, 227, 7);
 }
 .App-header1 {
-    background-color:  rgb(252, 227, 7);
     min-height: 10vh;
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: left;
     font-size: calc(10px + 2vmin);
-    color: rgb(255, 255, 255);
 }
 
 .App-link {
