@@ -119,6 +119,7 @@ function Teams() {
                         <img width="450" src={cooldudes} alt="Cool sports people have fun"></img>
                     </div>
                 </div>
+                <div class="row my-row-spacer-100"></div>
             </div>
         </div> 
     );
