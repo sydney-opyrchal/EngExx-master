@@ -3,7 +3,7 @@ import React from 'react';
 
 /*import logo from '../../assets/logo.svg';*/
 import logo from '../../assets/HT.png';
-import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
+import TwitterContainer from './twitterhelper'
 import './CDC.css';
 
 function CDC() {
@@ -24,11 +24,14 @@ function CDC() {
                 <a href="https://twitter.com/CDCgov">Please click here to stay up to date!</a>
             </p>
             <div><a class="twitter-timeline" data-width="300" data-height="500" href="https://twitter.com/CDCgov?ref_src=twsrc%5Etfw">Tweets by CDCgov</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
-            <TwitterTimelineEmbed
-  sourceType="CDC"
-  screenName="CDCgov"
-  options={{height: 400}}
-/>
+            
+            <TwitterContainer
+            class="twitter-timeline"
+            data-theme="dark"
+            data-tweet-limit="5"
+            data-chrome="noheader nofooter noborders"
+            href="https://twitter.com/CDCgov"
+            />
         </div>
 
     </div> 
