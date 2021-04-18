@@ -27,7 +27,18 @@ function Home() {
             
             <h1>Home</h1>
 
-            
+            <section>
+	        <div class="jumbotron" id="homejumbo">
+		        <div class="overlay"></div>
+  		            <div class="row">
+  			            <div class="col-1"></div>
+  		            	<div class="col-10">
+    			        
+    			
+    		            </div>
+    	            </div>
+	        </div>
+</section>
                     
             
             <div class="description">
