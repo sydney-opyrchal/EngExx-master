@@ -44,7 +44,7 @@ function Home() {
             
             <div class="description">
                 
-                <h2>Calendar</h2>
+                
                 </div>
             <TheCalendar/>
             <button class="btn btn-outline-secondary btn-lg">Add Event</button>

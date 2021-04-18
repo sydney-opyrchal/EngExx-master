@@ -2,7 +2,8 @@
 import "@fullcalendar/daygrid/main.css";  
 import FullCalendar from "@fullcalendar/react";  
 import dayGridPlugin from "@fullcalendar/daygrid";  
-import React, { Component } from 'react'  
+import React, { Component } from 'react' 
+import './Calendarr.css'
 
  
 const events = [{ title: "Today", date: new Date() },{ title: "Hanging", date: '2021-04-20'}];  
