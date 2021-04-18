@@ -3,8 +3,10 @@ import React from 'react';
 
 /*import logo from '../../assets/logo.svg';*/
 import logo from '../../assets/HT.png';
-import sportsppl from './sports_folks.jpg'
-import cooldudes from './running_dudes.jpg'
+import sportsppl from './softball_bros.jpeg'
+import cooldudes from './TT2.jpeg'
+/*import sportsppl from './sports_folks.jpg'
+import cooldudes from './running_dudes.jpg'*/
 import './Teams.css';
 
 function Teams() {
