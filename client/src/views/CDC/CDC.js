@@ -25,13 +25,9 @@ function CDC() {
             </p>
             <div><a class="twitter-timeline" data-width="300" data-height="500" href="https://twitter.com/CDCgov?ref_src=twsrc%5Etfw">Tweets by CDCgov</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
             
-            <TwitterContainer
-            class="twitter-timeline"
-            data-theme="dark"
-            data-tweet-limit="5"
-            data-chrome="noheader nofooter noborders"
-            href="https://twitter.com/CDCgov"
-            />
+            <TwitterContainer></TwitterContainer>
+
+            
         </div>
 
     </div> 
