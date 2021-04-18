@@ -1,5 +1,5 @@
 import React from 'react';
-import {TheCalendar } from './Calendarr';
+import {TheCalendar } from '../TheCalendar/Componentss/Calendarr';
 
 /*import logo from '../../assets/logo.svg';*/
 import logo from '../../assets/HT.png';

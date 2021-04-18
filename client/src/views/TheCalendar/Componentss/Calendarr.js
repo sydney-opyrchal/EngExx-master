@@ -5,7 +5,7 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import React, { Component } from 'react'  
 
  
-const events = [{ title: "Today", date: new Date() }];  
+const events = [{ title: "Today", date: new Date() },{ title: "Hanging", date: '2021-04-20'}];  
 export class TheCalendar extends Component {  
     render() {  
         return (  
