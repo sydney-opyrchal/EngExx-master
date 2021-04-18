@@ -24,11 +24,15 @@ html, body{
     margin-right:auto;
     margin-left: auto;
 }
+html * {
+    font-family: 'Arvo' !important;
+    /*font-family: 'Comic Sans MS', 'Comic Sans' !important;*/
+  }
 .jumbotron {
     padding: 0;
     margin: 0;
     color: white;
-    background-image: url('./TT2.jpeg');
+    background-image: url('./thugs.jpeg');
     /*background-position: center;*/
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,7 +40,23 @@ html, body{
     height: 90vh;
     position: relative;
     object-fit: scale-down;
+    
   }
+
+  .jumbotron .tt_title { /* increase font size */
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	text-transform: uppercase;
+	padding-top: 0.8em;
+	padding-bottom: 0.1em;
+	font-size: 148px;
+	line-height: 130px;
+	/*font-weight: bold;*/
+	letter-spacing: 0.1em;
+	position: absolute;
+	z-index: 2;
+}
   
   @media(min-width: 0px) and (max-width: 768px) {
       .jumbotron {
@@ -45,6 +65,15 @@ html, body{
           background-position: center;
       }
   }
+
+  .jumbotron .tt_info {
+	font-size: 24px;
+	line-height: 28px;
+	margin-top: 8px;
+	padding-top: 15.5em;
+	position: absolute;
+	z-index: 2;
+}
 .overlay {
     position: absolute;
     min-height: 100%;

@@ -25,7 +25,7 @@ function Home() {
                 
             </header>
             
-            <h1>Home</h1>
+            
 
             <section>
 	        <div class="jumbotron" id="homejumbo">
@@ -33,7 +33,8 @@ function Home() {
   		            <div class="row">
   			            <div class="col-1"></div>
   		            	<div class="col-10">
-    			        
+                          <h1 class="tt_title">Theta<br></br>Tau</h1>
+    			            <p class="tt_info">Health and Fitness Chair</p>
     			
     		            </div>
     	            </div>
