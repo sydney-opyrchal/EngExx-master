@@ -18,7 +18,14 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
 
 <!-- Bootstrap core CSS -->
 <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -37,6 +44,16 @@
           font-size: 3.5rem;
         }
       }
+      .nav-link {
+        margin-right: 1em !important;
+      }
+      .nav-link:hover {
+        color: #000;
+     }
+      .navbar-collapse {
+        justify-content: flex-end;
+      }
+
     </style>
  <!-- Custom styles for this template -->
  <link href="starter-template.css" rel="stylesheet">
@@ -45,7 +62,7 @@
   
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
 <div class="container-fluid">
-  <a class="navbar-brand" href="#">UF Theta Tau Health and Fitness</a>
+  <a class="navbar-brand" href="/Home">UF Theta Tau Health and Fitness</a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -61,7 +78,6 @@
       <li class="nav-item">
         <a class="nav-link" href="/Calendar">Calendar</a>
       </li>
-
       <li class="nav-item">
         <a class="nav-link" href="/FitnessTips">Fitness Tips</a>
       </li>
@@ -82,10 +98,6 @@
       </li>
      
     </ul>
-    <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
   </div>
 </div>
 </nav>
@@ -101,7 +113,10 @@
 </nav>
 <script src="Home.js"></script>
 <main class="container">
-
+<!--<div class="starter-template text-center py-5 px-3">
+  <h1>Bootstrap starter template</h1>
+  <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+</div> -->
 
 
 </main><!-- /.container -->
@@ -117,7 +132,14 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
     
   </body>
 </html>
