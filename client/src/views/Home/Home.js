@@ -4,16 +4,16 @@ import {TheCalendar } from '../TheCalendar/Componentss/Calendarr';
 /*import logo from '../../assets/logo.svg';*/
 import logo from '../../assets/HT.png';
 import './Home.css';
+import eye from './emojiEye.png';
+import mouth from './emojiMouth.png';
+import pika from './zzzikachu.jpg';
 
 function Home() {
     
     return (
-        
-        
+    
         <div className="App">
               
-              
-
             <header className="App-header"> 
                 <a
                     className="App-link"
@@ -24,8 +24,6 @@ function Home() {
                 </a>
                 
             </header>
-            
-            
 
             <section>
 	        <div class="jumbotron" id="homejumbo">
@@ -35,132 +33,80 @@ function Home() {
   		            	<div class="col-10">
                           <h1 class="tt_title">Theta<br></br>Tau</h1>
     			            <p class="tt_info">Health and Fitness Chair</p>
-    			
-    		            </div>
+
+                        </div>
     	            </div>
-	        </div>
-</section>
+                </div>
+            </section>
+            <div class="row my-row-spacer-65"></div>
+            <div class="container">
+                <div class="row justify-content-around my-row">
+                    <div class="col-md-3 my-col">
+                        <div class="card">
+                            <img class="card-img-top" src={eye} alt="Card image cap" />
+                            <div class="card-body">
+                                <h5 class="card-title">WE</h5>
+                                <p class="card-text">stay</p>
+                                {/*<a href="#" class="btn btn-primary">Go somewhere</a>*/}
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-md-3 my-col">
+                    <div class="card">
+                        <img class="card-img-top" src={mouth} alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">SEE</h5>
+                            <p class="card-text">right</p>
+                            {/*<a href="#" class="btn btn-primary">Go somewhere</a>*/}
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-md-3 my-col">
+                    <div class="card">
+                        <img class="card-img-top" src={eye} alt="Card image cap" />
+                        <div class="card-body">
+                            <h5 class="card-title">YOU</h5>
+                            <p class="card-text">there</p>
+                            {/*<a href="#" class="btn btn-primary">Go somewhere</a>*/}
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="row my-row-spacer-65"></div>
+            <div class="row justify-content-around my-row">
+                <div class="col-md-4 d-flex justify-content-center my-col">
+                    <div class="row justify-content-center my-row">
+                        <h2>Test Title</h2>
+                        <div class="row justify-content-center my-row">
+                        <div class="col my-col">
+                            <p>this is us and we are they. love us as we do ourselves. fear us as the rest of humanity someday will.
+                                <br /> Im very tired
+                            </p>
+                            </div>
+                    </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-7 d-flex justify-content-center my-col">
+                    <img src={pika} alt="i slep"></img>
+                </div>
+            </div>
+            <div class="row my-row-spacer-65"></div> 
+        </div>
+        <section class="container-wide">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <h2 class="bottom-text"> Want to SLEEP? </h2>
+                        <p>i sure do</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="row my-row-spacer-100"></div>
+    </div>
                     
             
-            <div class="description">
-                
-                
-                </div>
-            <TheCalendar/>
-            <button class="btn btn-outline-secondary btn-lg">Add Event</button>
-            <p>
-
-
-            </p>
-        <div class="description">
-            <h2>Health News!!</h2>
-            <p> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis. Suspendisse consectetur mi id libero fringilla, in pharetra sem ullamcorper.
-            </p>
-            <p>    
-                - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis. Suspendisse consectetur mi id libero fringilla, in pharetra sem ullamcorper.
-                </p>
-                <p>
-                -Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum quam odio, quis placerat ante luctus eu. Sed aliquet dolor id sapien rutrum, id vulputate quam iaculis. Suspendisse consectetur mi id libero fringilla, in pharetra sem ullamcorper.
-
-            </p>
-        </div>
-
-        <div class="description">
-            <h2>Teams</h2>
-            
-        </div>
-
-
-        <div class="container features">
-    <div class="row">
-    <div class="col-lg-2 col-md-2 col-sm-12">
-            <h3 class="feature-title">Team 1</h3>
-            {/*<img src="images/column-1.jpg" class="img-fluid">*/}
-            <p>Team Member 1</p>
-            <p>Team Member 2</p>
-            <p>Team Member 3</p>
-            <p>Team Member 4</p>
-            <p>Team Member 5</p>
-            <p>Team Member 6</p>
-            <p>Team Member 7</p>
-            <p>Total: </p>
-
-        </div>
-        
-        <div class="col-lg-2 col-md-2 col-sm-12">
-            <h3 class="feature-title">Team 2</h3>
-            {/*<img src="images/column-2.jpg" class="img-fluid">*/}
-            <p>Team Member 1</p>
-            <p>Team Member 2</p>
-            <p>Team Member 3</p>
-            <p>Team Member 4</p>
-            <p>Team Member 5</p>
-            <p>Team Member 6</p>
-            <p>Team Member 7</p>
-            <p>Total: </p>
-        </div>
-        
-        <div class="col-lg-2 col-md-2 col-sm-12">
-        <h3 class="feature-title">Team 3</h3>
-            {/*<img src="images/column-2.jpg" class="img-fluid">*/}
-            <p>Team Member 1</p>
-            <p>Team Member 2</p>
-            <p>Team Member 3</p>
-            <p>Team Member 4</p>
-            <p>Team Member 5</p>
-            <p>Team Member 6</p>
-            <p>Team Member 7</p>
-            <p>Total: </p>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-12">
-        <h3 class="feature-title">Team 4</h3>
-            {/*<img src="images/column-2.jpg" class="img-fluid">*/}
-            <p>Team Member 1</p>
-            <p>Team Member 2</p>
-            <p>Team Member 3</p>
-            <p>Team Member 4</p>
-            <p>Team Member 5</p>
-            <p>Team Member 6</p>
-            <p>Team Member 7</p>
-            <p>Total: </p>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-12">
-        <h3 class="feature-title">Team 5</h3>
-            {/*<img src="images/column-2.jpg" class="img-fluid">*/}
-            <p>Team Member 1</p>
-            <p>Team Member 2</p>
-            <p>Team Member 3</p>
-            <p>Team Member 4</p>
-            <p>Team Member 5</p>
-            <p>Team Member 6</p>
-            <p>Team Member 7</p>
-            <p>Total: </p>
-        </div>
-    </div>
-</div>
-        
-            <h2>Questions</h2>
-            
-        
-        <h3 class="feature-title">Get in Touch!</h3>
-    <div class="form-group">
-        <input type="text" class="form-control" placeholder="Name" name=""/>
-    </div>
-    <div class="form-group">
-        <input type="email" class="form-control" placeholder="Email Address" name="email"/>
-    </div>
-    <div class="form-group">
-        <textarea class="form-control" rows="4"></textarea>
-    </div>
-    <input type="submit" class="btn btn-secondary btn-block" value="Send" name=""></input>
-    </div> 
-    
-    
-       
-       
-        
-
-        
     );
 }
 

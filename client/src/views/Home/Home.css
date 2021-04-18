@@ -120,3 +120,35 @@ html * {
     color:#000;
     
 }
+/*.my-row {
+    border: 2px solid red;
+}
+.my-col {
+     border: 2px dotted blue;
+}*/
+.my-row-spacer-100 {
+    min-height: 100px;
+}
+.my-row-spacer-65 {
+    min-height: 65px;
+}
+.my-row-spacer-30 {
+    min-height: 30px;
+}
+.container-wide {
+    width: 100%;
+    background-image: url('./kittyrest.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+.home-row {
+    margin-top: 35%;
+}
+.bottom-text {
+    font-weight: bold;
+    color: black !important;
+}
