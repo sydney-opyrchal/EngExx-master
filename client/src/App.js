@@ -11,6 +11,7 @@ import CDC from "./views/CDC/CDC"
 import NotFound from "./views/NotFound"
 import Header from "./components/Header/Header"
 import Login from "./views/Login/login"
+import Workouts from "./views/Workouts/Workouts"
 
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
         <Route exact path="/HealthTips" component={HealthTips} />
         <Route exact path="/Login" component={Login} />
         <Route exact path="/CDCTips" component={CDC} />
+        <Route exact path="/Workouts" component={Workouts} />
         
         <Route component={NotFound}/>
       </Switch>

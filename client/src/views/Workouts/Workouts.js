@@ -2,14 +2,11 @@ import React from 'react';
 
 
 /*import logo from '../../assets/logo.svg';*/
-import logo from '../../assets/HT.png';
-import froot from './froot.jpeg';
-import watta from './agua.jpeg';
-import pillz from './vitz.png';
-import './HealthTips.css';
+
+import './Workouts.css';
 //import {Forum} from './Forum/forum'
 
-function HealthTips() {
+function Workouts() {
     
     return (
         
@@ -22,7 +19,7 @@ function HealthTips() {
             <div class="container">
              <div class="row my-row-spacer-30"></div>
                 <div class="row justify-content-center fit-row">
-                    <h1>Health Tips of the Week!</h1>
+                    <h1>Workouts</h1>
                 </div>
                 <div class="row fit-row">
                     <div class="col d-flex justify-content-center fit-col">
@@ -39,7 +36,7 @@ function HealthTips() {
                                     <div>
                                         Find healthy foods you really enjoy, so it's not a chore!
                                     </div>
-                                    <img class="card-img-top" src={froot} alt="Card image cap" />
+                                    {/*<img class="card-img-top" src={froot} alt="Card image cap" />*/}
                                 </div>
                             </div>
                         </div>
@@ -52,7 +49,7 @@ function HealthTips() {
                                     <div>
                                         Water is super important! It keeps you full and hydrated! It's also super for your skin!
                                     </div>
-                                    <img class="card-img-top" src={watta} alt="Card image cap" />
+                                    {/*<img class="card-img-top" src={watta} alt="Card image cap" />*/}
                                 </div>
                             </div>
                         </div>    
@@ -65,7 +62,7 @@ function HealthTips() {
                                     <div>
                                         Make sure you take your vitamins. Vitamins boost your immune system and prevent you from getting sick.
                                     </div>
-                                    <img class="card-img-top" src={pillz} alt="Card image cap" />
+                                    {/*<img class="card-img-top" src={pillz} alt="Card image cap" />*/}
                                 </div>
                             </div>
                         </div>
@@ -95,4 +92,4 @@ function HealthTips() {
     );
 }
 
-export default HealthTips;
+export default Workouts;
