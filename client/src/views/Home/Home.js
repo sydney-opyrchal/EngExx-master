@@ -4,8 +4,9 @@ import {TheCalendar } from '../TheCalendar/Componentss/Calendarr';
 /*import logo from '../../assets/logo.svg';*/
 import logo from '../../assets/HT.png';
 import './Home.css';
-import eye from './emojiEye.png';
-import mouth from './emojiMouth.png';
+import crest from './crest.jpeg';
+import eye from './TT1.jpeg';
+import mouth from './TT2.jpeg';
 import pika from './zzzikachu.jpg';
 
 function Home() {
@@ -43,20 +44,20 @@ function Home() {
                 <div class="row justify-content-around my-row">
                     <div class="col-md-3 my-col">
                         <div class="card">
-                            <img class="card-img-top" src={eye} alt="Card image cap" />
+                            <img class="card-img-top" src={mouth} alt="Card image cap" />
                             <div class="card-body">
-                                <h5 class="card-title">WE</h5>
-                                <p class="card-text">stay</p>
+                                {/*<h5 class="card-title">WE</h5>
+                                <p class="card-text">stay</p>*/}
                                 {/*<a href="#" class="btn btn-primary">Go somewhere</a>*/}
                             </div>
                         </div>
                     </div>
                 <div class="col-md-3 my-col">
                     <div class="card">
-                        <img class="card-img-top" src={mouth} alt="Card image cap" />
+                        <img class="card-img-top" src={crest} alt="Card image cap" />
                         <div class="card-body">
-                            <h5 class="card-title">SEE</h5>
-                            <p class="card-text">right</p>
+                            {/*<h5 class="card-title">SEE</h5>
+                            <p class="card-text">right</p>*/}
                             {/*<a href="#" class="btn btn-primary">Go somewhere</a>*/}
                         </div>
                     </div>  
@@ -65,8 +66,8 @@ function Home() {
                     <div class="card">
                         <img class="card-img-top" src={eye} alt="Card image cap" />
                         <div class="card-body">
-                            <h5 class="card-title">YOU</h5>
-                            <p class="card-text">there</p>
+                            {/*<h5 class="card-title">YOU</h5>
+                            <p class="card-text">there</p>*/}
                             {/*<a href="#" class="btn btn-primary">Go somewhere</a>*/}
                         </div>
                     </div> 
