@@ -3,6 +3,9 @@ import React from 'react';
 
 /*import logo from '../../assets/logo.svg';*/
 import logo from '../../assets/HT.png';
+import water from './hydrationIsKey.jpeg';
+import sleep from './doggysleep.jpeg';
+import protein from './GAINS.jpg';
 import './FitnessTips.css';
 
 function FitnessTips() {
@@ -35,6 +38,7 @@ function FitnessTips() {
                                     <div>
                                         Don't forget to drink water! Dehydration can cause your body to stop functioning at its fullest, making you lose strength and miss out on your gains!
                                     </div>
+                                    <img class="card-img-top" src={water} alt="Card image cap" />
                                 </div>
                             </div>
                         </div>
@@ -47,6 +51,7 @@ function FitnessTips() {
                                     <div>
                                         Sleep is very important! When you're asleep is when your body heals your torn muscle fibers the most. If you don't sleep your body won't heal as well and you'll be killing your gains!
                                     </div>
+                                    <img class="card-img-top" src={sleep} alt="Card image cap" />
                                 </div>
                             </div>
                         </div>    
@@ -57,8 +62,9 @@ function FitnessTips() {
                             <div class="row justify-content-center fit-row">
                                 <div class="col fit-col">
                                     <div>
-                                        Please literally just stay hydrated and sleep ty (also eat protein)
+                                        Eat lots of protein to max out those GAINS!
                                     </div>
+                                    <img class="card-img-top" src={protein} alt="Card image cap" />
                                 </div>
                             </div>
                         </div>
