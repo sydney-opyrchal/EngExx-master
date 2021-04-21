@@ -7,7 +7,7 @@ import './Home.css';
 import crest from './crest.jpeg';
 import eye from './TT1.jpeg';
 import mouth from './TT2.jpeg';
-import pika from './zzzikachu.jpg';
+import pika from './thetatau-history.jpeg';
 
 function Home() {
     
@@ -74,7 +74,7 @@ function Home() {
                 </div>
             </div>
             <div class="row my-row-spacer-65"></div>
-            <div class="row justify-content-around my-row">
+            {/*<div class="row justify-content-around my-row">
                 <div class="col-md-4 d-flex justify-content-center my-col">
                     <div class="row justify-content-center my-row">
                         <h2>Test Title</h2>
@@ -91,15 +91,15 @@ function Home() {
                 <div class="col-md-7 d-flex justify-content-center my-col">
                     <img src={pika} alt="i slep"></img>
                 </div>
-            </div>
+            </div>*/}
             <div class="row my-row-spacer-65"></div> 
         </div>
         <section class="container-wide">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col">
-                        <h2 class="bottom-text"> Want to SLEEP? </h2>
-                        <p>i sure do</p>
+                        {/*<h2 class="bottom-text"> Want to SLEEP? </h2>
+                        <p>i sure do</p>*/}
                     </div>
                 </div>
             </div>
