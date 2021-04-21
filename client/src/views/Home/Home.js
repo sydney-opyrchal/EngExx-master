@@ -46,8 +46,8 @@ function Home() {
                         <div class="card">
                             <img class="card-img-top" src={mouth} alt="Card image cap" />
                             <div class="card-body">
-                                {/*<h5 class="card-title">WE</h5>
-                                <p class="card-text">stay</p>*/}
+                                <h5 class="Intermurals">WE</h5>
+                                {/*<p class="card-text">stay</p>*/}
                                 {/*<a href="#" class="btn btn-primary">Go somewhere</a>*/}
                             </div>
                         </div>
@@ -56,8 +56,8 @@ function Home() {
                     <div class="card">
                         <img class="card-img-top" src={crest} alt="Card image cap" />
                         <div class="card-body">
-                            {/*<h5 class="card-title">SEE</h5>
-                            <p class="card-text">right</p>*/}
+                            <h5 class="card-title">Health Tips</h5>
+                            {/*<p class="card-text">right</p>*/}
                             {/*<a href="#" class="btn btn-primary">Go somewhere</a>*/}
                         </div>
                     </div>  
@@ -66,8 +66,8 @@ function Home() {
                     <div class="card">
                         <img class="card-img-top" src={eye} alt="Card image cap" />
                         <div class="card-body">
-                            {/*<h5 class="card-title">YOU</h5>
-                            <p class="card-text">there</p>*/}
+                            <h5 class="card-title">Fitness Tips</h5>
+                            {/*<p class="card-text">there</p>*/}
                             {/*<a href="#" class="btn btn-primary">Go somewhere</a>*/}
                         </div>
                     </div> 
